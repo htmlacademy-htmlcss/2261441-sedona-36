@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Виктория Еременко](https://up.htmlacademy.ru/htmlcss/36/user/2261441).
-* Наставник: `Неизвестно`.
+- Студент: [Виктория Еременко](https://up.htmlacademy.ru/htmlcss/36/user/2261441).
+- Наставник: [Вера Шингарева](https://htmlacademy.ru/profile/id1632741).
 
 ---
 
