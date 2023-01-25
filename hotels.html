@@ -21,12 +21,12 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link" href="#" title="Поиск">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link" href="#" title="Избранное">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -57,7 +57,6 @@
         class="hotels-filter"
         action="https://echo.htmlacademy.ru/"
         method="get"
-        oninput="priceoutput.value=priceinput.value"
       >
         <fieldset class="hotels-filter-group">
           <legend class="hotels-filter-title">Инфраструктура:</legend>
@@ -136,16 +135,9 @@
 
         <fieldset class="hotels-filter-group">
           <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-          <input
-            type="range"
-            min="0"
-            max="12000"
-            step="1000"
-            value="9000"
-            name="priceinput"
-          />
+          <input type="number" name="price-from" id="price-from" placeholder="от">
+          <input type="number" name="price-up-to" id="price-up-to" placeholder="до">
 
-          <output name="priceoutput"></output>
         </fieldset>
 
         <button class="button" type="submit">Применить</button>
@@ -162,44 +154,29 @@
 
         <ul class="search-result-view">
           <li class="search-result-view-item">
-            <label class="control">
-              <input
-                class="control-input"
-                type="radio"
-                name="search-result-view"
-                value="cards"
-                checked
-              /><span class="visually-hidden">Карточки</span>
-            </label>
+            <a href="#" class="search-result-view-link" title="Карточки">
+              <span class="visually-hidden">Карточки</span>
+            </a>
           </li>
+
           <li class="search-result-view-item">
-            <label class="control">
-              <input
-                class="control-input"
-                type="radio"
-                name="search-result-view"
-                value="single-view"
-              /><span class="visually-hidden">По одному на странице</span>
-            </label>
+            <a href="#" class="search-result-view-link" title="По одному на странице">
+              <span class="visually-hidden">По одному на странице/span>
+            </a>
           </li>
+
           <li class="search-result-view-item">
-            <label class="control">
-              <input
-                class="control-input"
-                type="radio"
-                name="search-result-view"
-                value="list"
-              /><span class="visually-hidden">Список</span>
-            </label>
+            <a href="#" class="search-result-view-link" title="Список">
+              <span class="visually-hidden">Список</span>
+            </a>
           </li>
-        </ul>
 
         <ul class="hotel-list">
           <li class="hotel-card">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             <img class="hotel-card-image" src="" alt="природа Седоны" />
             <p class="hotel-card-text">Гостиница</p>
-            <p class="hotel-card-text">Цена</p>
+            <p class="hotel-card-text">От 4000 ₽</p>
             <a class="hotel-card-link" href="#">Подробнее</a>
             <button class="button">В избранное</button>
             <p class="star-rating">
@@ -250,11 +227,6 @@
 
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
@@ -271,11 +243,6 @@
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
           </li>
         </ul>
       </section>
@@ -306,12 +273,20 @@
       <h2 class="footer-title visually-hidden">Контакты разработчика</h2>
       <ul class="social">
         <li class="social-item">
-          <a class="social-icon" href="https://vk.com/htmlacademy">
+          <a
+            class="social-icon"
+            href="https://vk.com/htmlacademy"
+            title="Наш ВКонтакте"
+          >
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-icon" href="https://t.me/htmlacademy">
+          <a
+            class="social-icon"
+            href="https://t.me/htmlacademy"
+            title="Наш Телеграм"
+          >
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
@@ -319,6 +294,7 @@
           <a
             class="social-icon"
             href="https://www.youtube.com/user/htmlacademyru"
+            title="Наш канал на YouTube"
           >
             <span class="visually-hidden">YouTube</span>
           </a>
