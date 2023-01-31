@@ -6,7 +6,9 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="logo" src="logo.svg" alt="Логотип города Седона" />
+      <a href="index.html" class="logo-link">
+        <img class="logo" src="images/logo.svg" alt="Логотип city of Sedona"/>
+      </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -41,16 +43,16 @@
 
     <main class="main-hotels">
       <h1 class="page-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
+      <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">
+          <a class="breadcrumbs-link" href="index.html" title="Главная">
             <span class="visually-hidden">Главная</span>
           </a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
-      </ul>
+      </ol>
 
       <h2 class="visually-hidden">Подбор гостиниц с фильтрами</h2>
       <form
@@ -174,7 +176,7 @@
         <ul class="hotel-list">
           <li class="hotel-card">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-            <img class="hotel-card-image" src="" alt="природа Седоны" />
+            <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="природа Седоны" />
             <p class="hotel-card-text">Гостиница</p>
             <p class="hotel-card-text">От 4000 ₽</p>
             <a class="hotel-card-link" href="#">Подробнее</a>
@@ -187,7 +189,7 @@
 
           <li class="hotel-card">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-            <img class="hotel-card-image" src="" alt="природа Седоны" />
+            <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212" alt="природа Седоны" />
             <p class="hotel-card-text">Гостиница</p>
             <p class="hotel-card-text">От 5000 ₽</p>
             <a class="hotel-card-link" href="#">Подробнее</a>
@@ -200,7 +202,7 @@
 
           <li class="hotel-card">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
-            <img class="hotel-card-image" src="" alt="природа Седоны" />
+            <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212" alt="природа Седоны" />
             <p class="hotel-card-text">Гостиница</p>
             <p class="hotel-card-text">От 2500 ₽</p>
             <a class="hotel-card-link" href="#">Подробнее</a>
@@ -213,7 +215,7 @@
 
           <li class="hotel-card">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
-            <img class="hotel-card-image" src="" alt="природа Седоны" />
+            <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212" alt="природа Седоны" />
             <p class="hotel-card-text">Гостиница</p>
             <p class="hotel-card-text">От 1500 ₽</p>
             <a class="hotel-card-link" href="#">Подробнее</a>
@@ -225,7 +227,7 @@
           </li>
         </ul>
 
-        <ul class="pagination">
+        <ol class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -239,12 +241,12 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <span class="pagination-ellipsis">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-        </ul>
+        </ol>
       </section>
 
       <section class="newsletter newsletter-inner">
