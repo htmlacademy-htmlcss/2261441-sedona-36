@@ -31,12 +31,13 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#" title="Избранное">
               <span class="visually-hidden">Избранное</span>
+              <span class="favorites-quantity">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link hotel-search-link button" href="#">
+            <button class="button navigation-button popup-button" type="button">
               Хочу сюда!
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -53,7 +54,7 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <p class="section-text section-title">
+        <p class="section-lead">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
         <p class="section-text">
@@ -61,11 +62,13 @@
         </p>
 
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item advantages-city">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
+          </li>
+          <li class="image">
             <img class="advantages-image" src="images/advantages/sedona-city-view.jpg" width="800" height="384"
               alt="Домики на фоне гор" />
           </li>
@@ -75,7 +78,7 @@
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-road">
             <h3 class="advantages-title">Красивая дорога</h3>
             <p class="advantages-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -87,11 +90,13 @@
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-bridge">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
+          </li>
+          <li class="image">
             <img class="advantages-image" src="images/advantages/devils-bridge.jpg" width="800" height="384"
               alt="Каньон и горы" />
           </li>
@@ -100,7 +105,7 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Уровень комфорта в Седоне</h2>
-        <p class="section-text section-title">
+        <p class="section-lead">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </p>
         <p class="section-text">
@@ -113,7 +118,7 @@
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-food">
             <h3 class="advantages-title">Еда</h3>
             <p class="advantages-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
@@ -134,9 +139,9 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <a class="hotel-search-link button" href="#">
+        <button class="button hotel-search-button popup-button" type="button">
           Поиск гостиницы в Седоне
-        </a>
+        </button>
       </section>
 
       <section class="newsletter newsletter-index">
@@ -145,7 +150,7 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" required />
+          <input class="email-input" type="email" placeholder="Ваш e-mail" name="newsletter-email" required />
           <button class="button newsletter-button">Подписаться</button>
         </form>
       </section>
@@ -185,7 +190,7 @@
         </li>
       </ul>
       <address class="phone">
-        <a href="tel:+78128121212"> +7 (812) 812-12-12 </a>
+        <a class="phone-link" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
       </address>
 
       <a class="contacts-link" href="https://htmlacademy.ru/">
