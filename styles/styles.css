@@ -15,14 +15,30 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   text-align: center;
+}
+
+.page-container {
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -64,6 +80,10 @@ body {
 }
 
 /* Main */
+
+.main-container {
+  flex-grow: 1;
+}
 
 .section-lead,
 .section-title {
@@ -115,7 +135,7 @@ body {
 
 .newsletter-index {
   color: #ffffff;
-  background-color: lightslategrey;
+  background-color: #778899;
   background-image: url(../images/background/subscribe-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -137,7 +157,7 @@ body {
 /* Catalog */
 .filter-container {
   color: #ffffff;
-  background-color: lightslategrey;
+  background-color: #778899;
   background-image: url(../images/background/filter-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
