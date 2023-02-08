@@ -53,8 +53,35 @@ body {
 
 /* Header */
 
+.header-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.navigation-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .navigation-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-pages {
+  width: 339px;
+}
+
+.navigation-user {
+  width: 268px;
 }
 
 .navigation-link {
@@ -302,8 +329,18 @@ body {
 
 /* Footer */
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .social {
   list-style: none;
+  width: 142px;
+  margin: 0;
+  padding: 0;
 }
 
 .phone-link {
@@ -314,4 +351,10 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  width: 720px;
+}
+
+.contacts-link {
+  width: 115px;
 }
