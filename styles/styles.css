@@ -15,11 +15,6 @@
   font-display: swap;
 }
 
-* {
-  outline: 2px solid rgba(0, 128, 0, 0.3);
-  /* outline-offset: 1px; */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
