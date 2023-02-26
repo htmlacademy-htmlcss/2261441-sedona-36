@@ -26,12 +26,12 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link-user" href="#" title="Поиск">
+              <a class="navigation-link-user navigation-link-search" href="#" title="Поиск">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link-user" href="#" title="Избранное">
+              <a class="navigation-link-user navigation-link-favorites" href="#" title="Избранное">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorites-quantity">12</span>
               </a>
@@ -50,8 +50,9 @@
 
         <section class="hero">
           <h2 class="visually-hidden">О Седоне</h2>
-          <img src="images/hero-background.jpg" width="1200" height="485" alt="Горный пейзаж." />
-          <img src="images/welcome.svg" width="458" height="352"
+          <img class="hero-background" src="images/hero-background.jpg" width="1200" height="485"
+            alt="Горный пейзаж." />
+          <img class="hero-text" src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" />
         </section>
 
@@ -69,7 +70,7 @@
           <ul class="advantages-list advantages-sightseeing-list">
             <li class="advantages-item advantages-item-wide">
               <div class="advantages-content">
-                <h3 class="advantages-title">Настоящий городок</h3>
+                <h3 class="advantages-title advantages-wide-title advantages-sightseeing-title">Настоящий городок</h3>
                 <p class="advantages-description">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
@@ -79,7 +80,7 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-content">
-                <h3 class="advantages-title">Небольшая площадь</h3>
+                <h3 class="advantages-title advantages-sightseeing-title">Небольшая площадь</h3>
                 <p class="advantages-description">
                   Все достопримечательности находятся очень близко
                 </p>
@@ -87,7 +88,7 @@
             </li>
             <li class="advantages-item advantages-road">
               <div class="advantages-content">
-                <h3 class="advantages-title">Красивая <br> дорога</h3>
+                <h3 class="advantages-title advantages-sightseeing-title">Красивая <br> дорога</h3>
                 <p class="advantages-description">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
@@ -95,7 +96,7 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-content">
-                <h3 class="advantages-title">Мало <br> туристов</h3>
+                <h3 class="advantages-title advantages-sightseeing-title">Мало <br> туристов</h3>
                 <p class="advantages-description">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
@@ -103,7 +104,8 @@
             </li>
             <li class="advantages-item advantages-item-wide  advantages-item-wide-reverse">
               <div class="advantages-content">
-                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-title advantages-wide-title advantages-sightseeing-title">Там есть мост дьявола
+                </h3>
                 <p class="advantages-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -126,7 +128,7 @@
           </div>
 
           <ul class="advantages-list">
-            <li class="advantages-item">
+            <li class="advantages-item advantages-housing">
               <div class="advantages-content">
                 <h3 class="advantages-title comfort-title">Жильё</h3>
                 <p class="advantages-description">
@@ -142,7 +144,7 @@
                 </p>
               </div>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item advantages-souvenirs">
               <div class="advantages-content">
                 <h3 class="advantages-title comfort-title">Сувениры</h3>
                 <p class="advantages-description">
@@ -205,7 +207,7 @@
           <li class="social-item">
             <a class="social-icon" href="https://www.youtube.com/user/htmlacademyru" title="Наш канал на YouTube">
               <span class="visually-hidden">YouTube</span>
-              <svg class="svg-icon-link" xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
+              <svg class="svg-icon-link" xmlns="http://www.w3.org/2000/svg" width="22" height="17" fill="none">
                 <path fill="#83B3D3"
                   d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z" />
               </svg>
