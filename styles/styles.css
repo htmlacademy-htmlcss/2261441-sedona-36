@@ -60,8 +60,25 @@ body {
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
+.button:hover,
+.button:focus-visible {
+  background-color: #615048;
+}
+
+.button:focus-visible {
+  outline: none;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 /* PAGES*/
 
 /* HEADER */
@@ -422,6 +439,11 @@ body {
   padding: 8px 50px;
 }
 
+.newsletter-button:hover,
+.newsletter-button:focus-visible {
+  background-color: #68a2ca;
+}
+
 /* CATALOG */
 
 /* Filter */
@@ -580,6 +602,11 @@ body {
   margin-bottom: 32px;
 }
 
+.filter-submit-button:hover,
+.filter-submit-button:focus-visible {
+  background-color: #68a2ca;
+}
+
 .filter-reset-button {
   display: block;
   font-size: 16px;
@@ -589,6 +616,25 @@ body {
   padding: 8px 57.5px;
   height: 36px;
   border: none;
+  border-radius: 4px;
+}
+
+.button.filter-reset-button:hover {
+  background: transparent;
+  opacity: 0.6;
+}
+
+.button.filter-reset-button:focus-visible {
+  background: transparent;
+  box-shadow: 0 0 0 3px #83b3d3 inset;
+}
+
+.button.filter-reset-button:active {
+  opacity: 0.3;
+}
+
+.button.filter-reset-button:disabled {
+  opacity: 0.1;
 }
 
 .search-output {
@@ -738,9 +784,20 @@ body {
   border: none;
   border-radius: 4px;
 }
+
+.add-to-favorite-button:hover,
+.add-to-favorite-button:focus-visible {
+  background-color: #68a2ca;
+}
+
 .added-button {
   background: #7db54f;
   padding: 8px 18px;
+}
+
+.added-button:hover,
+.added-button:focus-visible {
+  background-color: #6c9e42;
 }
 
 .star-rating-4 {
@@ -797,13 +854,25 @@ body {
   box-sizing: border-box;
   padding: 0 15px;
   border-radius: 4px;
-  background: #82b3d3;
+  background-color: #82b3d3;
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 60px;
   text-transform: uppercase;
+}
+
+.pagination-link:hover,
+.pagination-link:focus-visible {
+  background-color: #68a2ca;
+  outline: none;
+  box-shadow: 0 0 0 1px #82b3d3 inset;
+}
+
+.pagination-link:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current {
