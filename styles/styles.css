@@ -63,22 +63,28 @@ body {
   cursor: pointer;
 }
 
+*:focus {
+  outline-color: #68a2ca;
+}
+
 .button:hover,
-.button:focus-visible {
+.button:focus {
   background-color: #615048;
 }
 
-.button:focus-visible {
+.button:focus {
   outline: none;
-}
-
-.button:disabled {
-  background-color: #e5e5e5;
 }
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.button:disabled,
+.button.button-disabled {
+  background-color: #e5e5e5;
+}
+
 /* PAGES*/
 
 /* HEADER */
@@ -90,10 +96,20 @@ body {
 
 .logo,
 .logo-link {
+  width: 140px;
+  height: 70px;
   margin-right: 30px;
   margin-bottom: -6px;
   position: relative;
   z-index: 100;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
 }
 
 .navigation {
@@ -127,6 +143,14 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
 .navigation-link-current::after {
   content: "";
   display: block;
@@ -150,6 +174,14 @@ body {
   display: block;
   min-width: 44px;
   min-height: 64px;
+}
+
+.navigation-link-user:hover {
+  opacity: 0.6;
+}
+
+.navigation-link-user:active {
+  opacity: 0.3;
 }
 
 .navigation-link-search {
@@ -430,6 +462,21 @@ body {
   flex-grow: 1;
 }
 
+.email-input:hover {
+  background: #e6e6e6;
+}
+
+.email-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #83b3d3 inset;
+  background: #e6e6e6;
+}
+
+.email-input:not(:placeholder-shown) {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 0 2px #000000 inset;
+}
+
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
@@ -440,8 +487,12 @@ body {
 }
 
 .newsletter-button:hover,
-.newsletter-button:focus-visible {
+.newsletter-button:focus {
   background-color: #68a2ca;
+}
+
+.newsletter-button:disabled {
+  background-color: #e5e5e5;
 }
 
 /* CATALOG */
@@ -455,6 +506,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding: 35px 70px 70px 70px;
+  position: relative;
 }
 
 .page-title {
@@ -501,6 +553,19 @@ body {
   display: block;
   min-width: 13px;
   min-height: 15px;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+  outline: none;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .breadcrumbs-link-homepage {
@@ -553,6 +618,18 @@ body {
   margin-bottom: 0;
 }
 
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus {
+  outline: none;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
 .price-filter {
   width: 288px;
   margin-right: 70px;
@@ -573,6 +650,22 @@ body {
   border: none;
   padding: 12px 20px;
   width: 143px;
+}
+
+.price-input:hover {
+  background-color: #e6e6e6;
+}
+
+.price-input:focus {
+  background-color: #e6e6e6;
+  outline: #83b3d3 solid 3px;
+}
+
+.price-input:not(:placeholder-shown),
+.price-input:not(:placeholder-shown):focus {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 0 2px #000000 inset;
+  outline: none;
 }
 
 .price-range-start {
@@ -603,8 +696,12 @@ body {
 }
 
 .filter-submit-button:hover,
-.filter-submit-button:focus-visible {
+.filter-submit-button:focus {
   background-color: #68a2ca;
+}
+
+.filter-submit-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .filter-reset-button {
@@ -624,7 +721,7 @@ body {
   opacity: 0.6;
 }
 
-.button.filter-reset-button:focus-visible {
+.button.filter-reset-button:focus {
   background: transparent;
   box-shadow: 0 0 0 3px #83b3d3 inset;
 }
@@ -634,6 +731,7 @@ body {
 }
 
 .button.filter-reset-button:disabled {
+  background: transparent;
   opacity: 0.1;
 }
 
@@ -664,10 +762,28 @@ body {
   color: #333333;
   box-sizing: border-box;
   width: 292px;
-  height: 49px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding: 12px 18px;
+  padding: 12px 45px 12px 18px;
+  appearance: none;
+  background-image: url("../images/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+}
+
+.select-control:hover {
+  border-color: #68a2ca;
+}
+
+.select-control:focus {
+  border-color: #3f5e72;
+  outline: none;
+}
+
+.select-control:disabled {
+  color: #000000;
+  border-color: #000000;
+  opacity: 0.3;
 }
 
 .search-result-view {
@@ -692,6 +808,18 @@ body {
 
 .search-result-view-link-current {
   border: 2px solid #000000;
+}
+
+.search-result-view-link:hover {
+  border-color: #000000;
+}
+
+.search-result-view-link:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+.search-result-view-link:active {
+  border-color: #000000;
 }
 
 .search-result-view-link-icons {
@@ -786,8 +914,11 @@ body {
 }
 
 .add-to-favorite-button:hover,
-.add-to-favorite-button:focus-visible {
+.add-to-favorite-button:focus {
   background-color: #68a2ca;
+}
+.add-to-favorite-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .added-button {
@@ -796,8 +927,12 @@ body {
 }
 
 .added-button:hover,
-.added-button:focus-visible {
+.added-button:focus {
   background-color: #6c9e42;
+}
+
+.added-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .star-rating-4 {
@@ -864,7 +999,7 @@ body {
 }
 
 .pagination-link:hover,
-.pagination-link:focus-visible {
+.pagination-link:focus {
   background-color: #68a2ca;
   outline: none;
   box-shadow: 0 0 0 1px #82b3d3 inset;
@@ -875,9 +1010,14 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-current {
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   background: #f2f2f2;
   color: #000000;
+  outline: none;
+  box-shadow: none;
 }
 
 .pagination-ellipsis {
@@ -911,6 +1051,18 @@ body {
   box-sizing: border-box;
   min-width: calc(142px / 3);
   min-height: 40px;
+  color: #83b3d3;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #68a2ca;
+  outline: none;
+}
+
+.social-icon:active {
+  color: #68a2ca;
+  opacity: 0.3;
 }
 
 .phone-link {
@@ -922,6 +1074,32 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.phone-link:hover,
+.phone-link:focus {
+  color: #756157;
+  outline: none;
+}
+
+.phone-link:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
+.contacts-link {
+  color: #000000;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #756157;
+  outline: none;
+}
+
+.contacts-link:active {
+  color: #756157;
+  opacity: 0.3;
 }
 
 .svg-logo-link {
