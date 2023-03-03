@@ -58,7 +58,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
             </li>
           </ol>
 
@@ -115,12 +115,12 @@
             <fieldset class="hotels-filter-group price-filter">
               <legend class="hotels-filter-title">Стоимость, ₽:</legend>
               <div class="price-input-wrapper">
-                <label class="visually-hidden" for="price-range-start">Минимальная стоимость</label>
+                <label class="price-input-label price-input-label-start" for="price-range-start">от</label>
                 <input class="price-input price-range-start" type="text" name="price-range-start" id="price-range-start"
-                  placeholder="от">
-                <label class="visually-hidden" for="price-range-end">Максимальная стоимость</label>
+                  placeholder="0">
+                <label class="price-input-label price-input-label-end" for="price-range-end">до</label>
                 <input class="price-input price-range-end" type="text" name="price-range-end" id="price-range-end"
-                  placeholder="до">
+                  placeholder="9000">
               </div>
             </fieldset>
 
