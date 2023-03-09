@@ -1179,25 +1179,31 @@ body {
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 60px;
   min-height: 60px;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 10px 15px;
   border-radius: 4px;
   background-color: #82b3d3;
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 36px;
   text-transform: uppercase;
 }
 
-.pagination-link:hover,
+.pagination-link:hover {
+  background-color: #68a2ca;
+  box-shadow: 0 0 0 1px #82b3d3 inset;
+}
+
 .pagination-link:focus {
   background-color: #68a2ca;
-  outline: none;
+  outline-color: #615048;
   box-shadow: 0 0 0 1px #82b3d3 inset;
 }
 
@@ -1216,9 +1222,11 @@ body {
 }
 
 .pagination-ellipsis {
-  display: block;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 60px;
 }
 
 /* FOOTER*/
