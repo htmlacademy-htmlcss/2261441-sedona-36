@@ -35,6 +35,7 @@ html {
 body {
   margin: 0;
   height: 100%;
+  min-width: 1280px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -487,6 +488,13 @@ body {
   box-shadow: 0 0 0 2px #000000 inset;
 }
 
+.email-input:disabled,
+.email-input:disabled:hover,
+.email-input:disabled:focus {
+  background-color: #f2f2f2;
+  opacity: 0.3;
+}
+
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
@@ -496,13 +504,20 @@ body {
   padding: 8px 50px;
 }
 
-.newsletter-button:hover,
-.newsletter-button:focus {
+.newsletter-button:hover {
   background-color: #68a2ca;
 }
 
-.newsletter-button:disabled {
-  background-color: #e5e5e5;
+.newsletter-button:focus {
+  background-color: #68a2ca;
+  outline-color: #615048;
+}
+
+.newsletter-button:disabled,
+.newsletter-button:disabled:hover,
+.newsletter-button:disabled:focus {
+  background-color: #f2f2f2;
+  opacity: 0.3;
 }
 
 /* CATALOG */
@@ -773,6 +788,14 @@ body {
   outline: none;
 }
 
+.price-input:disabled,
+.price-input:disabled:hover,
+.price-input:disabled:active {
+  background-color: #f2f2f2;
+  box-shadow: none;
+  opacity: 0.3;
+}
+
 .price-range-start {
   border-radius: 4px 0 0 4px;
 }
@@ -858,9 +881,13 @@ body {
   margin-bottom: 32px;
 }
 
-.filter-submit-button:hover,
+.filter-submit-button:hover {
+  background-color: #68a2ca;
+}
+
 .filter-submit-button:focus {
   background-color: #68a2ca;
+  outline-color: #615048;
 }
 
 .filter-submit-button:disabled {
@@ -1076,10 +1103,15 @@ body {
   border-radius: 4px;
 }
 
-.add-to-favorite-button:hover,
-.add-to-favorite-button:focus {
+.add-to-favorite-button:hover {
   background-color: #68a2ca;
 }
+
+.add-to-favorite-button:focus {
+  background-color: #68a2ca;
+  outline-color: #615048;
+}
+
 .add-to-favorite-button:disabled {
   background-color: #e5e5e5;
 }
@@ -1147,25 +1179,31 @@ body {
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 60px;
   min-height: 60px;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 10px 15px;
   border-radius: 4px;
   background-color: #82b3d3;
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 36px;
   text-transform: uppercase;
 }
 
-.pagination-link:hover,
+.pagination-link:hover {
+  background-color: #68a2ca;
+  box-shadow: 0 0 0 1px #82b3d3 inset;
+}
+
 .pagination-link:focus {
   background-color: #68a2ca;
-  outline: none;
+  outline-color: #615048;
   box-shadow: 0 0 0 1px #82b3d3 inset;
 }
 
@@ -1184,9 +1222,11 @@ body {
 }
 
 .pagination-ellipsis {
-  display: block;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 60px;
 }
 
 /* FOOTER*/
@@ -1347,7 +1387,7 @@ body {
 .modal-content {
   display: grid;
   grid-template-columns: 137px 198px 132px 110px;
-  grid-template-rows: 48px 48px 48px 48px 48px 48px auto;
+  grid-template-rows: repeat(7, minmax(48px, auto));
 }
 
 .modal-label-check-in {
@@ -1409,7 +1449,6 @@ body {
   padding-right: 10px;
   text-transform: capitalize;
   align-self: center;
-  cursor: pointer;
 }
 
 .modal-label-icon {
@@ -1426,7 +1465,6 @@ body {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
-  cursor: pointer;
 }
 
 .modal-input:hover {
@@ -1543,7 +1581,7 @@ body {
 .tooltip {
   position: absolute;
   margin-top: 0;
-  margin-left: 10px;
+  margin-right: 10px;
   width: 26px;
   height: 26px;
 }
@@ -1568,11 +1606,12 @@ body {
 .tooltip-text {
   background-color: #333333;
   color: #ffffff;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 22px 22px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   box-sizing: border-box;
@@ -1620,9 +1659,13 @@ body {
   grid-row: 7/8;
 }
 
-.modal-submit-button:hover,
+.modal-submit-button:hover {
+  background-color: #68a2ca;
+}
+
 .modal-submit-button:focus {
   background-color: #68a2ca;
+  outline-color: #615048;
 }
 
 .modal-submit-button:disabled {
