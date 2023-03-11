@@ -5,15 +5,15 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   </head>
 
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a href="index.html" class="logo-link">
-          <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип city of Sedona" />
+        <a class="logo-link" href="index.html">
+          <img class="logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип city of Sedona." />
         </a>
         <nav class="navigation">
           <ul class="navigation-list navigation-pages">
@@ -39,7 +39,7 @@
                 <span class="favorites-quantity">12</span>
               </a>
             </li>
-            <li class="navigation-item navigation-item-button">
+            <li class="navigation-item">
               <a class="button navigation-button" href="index.html#hotel-search">
                 Хочу сюда!
               </a>
@@ -48,14 +48,13 @@
         </nav>
       </header>
 
-      <main class="main-container main-hotels">
+      <main class="main-container">
         <div class="filter-container">
-
           <h1 class="page-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-homepage" href="index.html" title="Главная">
-                <span class="visually-hidden">Главная</span>
+                <span class="visually-hidden">Главная.</span>
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -152,11 +151,8 @@
               <button class="button filter-submit-button" type="submit">Применить</button>
               <button class="button filter-reset-button" type="reset">Сбросить</button>
             </div>
-
           </form>
-
         </div>
-
 
         <section class="search-output">
           <div class="search-output-container">
@@ -170,23 +166,22 @@
 
             <ul class="search-result-view">
               <li class="search-result-view-item">
-                <a href="#"
-                  class="search-result-view-link search-result-view-link-icons search-result-view-link-current"
-                  title="Карточки">
-                  <span class="visually-hidden">Карточки</span>
+                <a class="search-result-view-link search-result-view-link-icons search-result-view-link-current"
+                  href="#" title="Карточки">
+                  <span class="visually-hidden">Карточки.</span>
                 </a>
               </li>
 
               <li class="search-result-view-item">
-                <a href="#" class="search-result-view-link search-result-view-link-one-per-page"
+                <a class="search-result-view-link search-result-view-link-one-per-page" href="#"
                   title="По одной на странице">
-                  <span class="visually-hidden">По одной на странице</span>
+                  <span class="visually-hidden">По одной на странице.</span>
                 </a>
               </li>
 
               <li class="search-result-view-item">
-                <a href="#" class="search-result-view-link search-result-view-link-list" title="Список">
-                  <span class="visually-hidden">Список</span>
+                <a class="search-result-view-link search-result-view-link-list" href="#" title="Список">
+                  <span class="visually-hidden">Список.</span>
                 </a>
               </li>
             </ul>
@@ -200,7 +195,7 @@
               <p class="hotel-card-text">Гостиница</p>
               <p class="hotel-card-price">От 4000 ₽</p>
               <a class="button hotel-card-link" href="#">Подробнее</a>
-              <button class="button add-to-favorite-button">В избранное</button>
+              <button class="button add-to-favorite-button" type="button">В избранное</button>
               <p class="star-rating">
                 <span class="visually-hidden">4 звезды</span>
                 <span class="star"></span>
@@ -218,7 +213,7 @@
               <p class="hotel-card-text">Гостиница</p>
               <p class="hotel-card-price">От 5000 ₽</p>
               <a class="button hotel-card-link" href="#">Подробнее</a>
-              <button class="button add-to-favorite-button added-button">В избранном</button>
+              <button class="button add-to-favorite-button added-button" type="button">В избранном</button>
               <p class="star-rating">
                 <span class="visually-hidden">4 звезды</span>
                 <span class="star"></span>
@@ -236,7 +231,7 @@
               <p class="hotel-card-text">Гостиница</p>
               <p class="hotel-card-price">От 2500 ₽</p>
               <a class="button hotel-card-link" href="#">Подробнее</a>
-              <button class="button add-to-favorite-button">В избранное</button>
+              <button class="button add-to-favorite-button" type="button">В избранное</button>
               <p class="star-rating">
                 <span class="visually-hidden">3 звезды</span>
                 <span class="star"></span>
@@ -253,7 +248,7 @@
               <p class="hotel-card-text">Гостиница</p>
               <p class="hotel-card-price">От 1500 ₽</p>
               <a class="button hotel-card-link" href="#">Подробнее</a>
-              <button class="button add-to-favorite-button">В избранное</button>
+              <button class="button add-to-favorite-button" type="button">В избранное</button>
               <p class="star-rating">
                 <span class="visually-hidden">2 звезды</span>
                 <span class="star"></span>
@@ -286,28 +281,26 @@
         </section>
 
         <section class="newsletter">
-
           <h2 class="section-title newsletter-section-title">Подпишитесь на рассылку</h2>
           <p class="section-text newsletter-section-text">
             Только полезная информация и никакого спама, <br> честное бойскаутское!
           </p>
 
           <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="email-input">Ваш e-mail</label>
-            <input class="email-input" type="email" placeholder="Ваш e-mail" name="newsletter-email" required />
-            <button class="button newsletter-button">Подписаться</button>
+            <label class="visually-hidden" for="email-input">Ваш e-mail.</label>
+            <input class="email-input" type="email" placeholder="Ваш e-mail" name="newsletter-email" id="email-input"
+              required />
+            <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
-
         </section>
       </main>
 
       <footer class="page-footer">
-
         <h2 class="footer-title visually-hidden">Контакты разработчика</h2>
         <ul class="social">
           <li class="social-item">
             <a class="social-icon" href="https://vk.com/htmlacademy" title="Наш ВКонтакте" target="_blank">
-              <span class="visually-hidden">ВКонтакте</span>
+              <span class="visually-hidden">ВКонтакте.</span>
               <svg class="svg-icon-link" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="25" height="15" viewBox="0 0 25 15" fill="none">
                 <path fill="currentColor" fill-rule="evenodd"
@@ -318,7 +311,7 @@
           </li>
           <li class="social-item">
             <a class="social-icon" href="https://t.me/htmlacademy" title="Наш Телеграм" target="_blank">
-              <span class="visually-hidden">Телеграм</span>
+              <span class="visually-hidden">Телеграм.</span>
               <svg class="svg-icon-link" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="18" height="16" viewBox="0 0 18 16" fill="none">
                 <path fill="currentColor"
@@ -329,7 +322,7 @@
           <li class="social-item">
             <a class="social-icon" href="https://www.youtube.com/user/htmlacademyru" title="Наш канал на YouTube"
               target="_blank">
-              <span class="visually-hidden">YouTube</span>
+              <span class="visually-hidden">YouTube.</span>
               <svg class="svg-icon-link" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                 width="23" height="18" viewBox="0 0 22 17" fill="none">
                 <path fill="currentColor"
@@ -343,7 +336,7 @@
         </address>
 
         <a class="contacts-link" href="https://htmlacademy.ru/" target="_blank">
-          <span class="visually-hidden">.html academy</span>
+          <span class="visually-hidden">html academy.</span>
           <svg class="svg-logo-link" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="115"
             height="34" viewBox="0 0 115 34" fill="none">
             <path fill="currentColor"
